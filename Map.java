@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public interface Map {
 
-    public ArrayList<Coordinate> obstacles;
+    public static ArrayList<Coordinates> obstacles = new ArrayList<Coordinates>();
 
 
 }

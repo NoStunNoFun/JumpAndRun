@@ -1,14 +1,18 @@
 import java.util.ArrayList;
 
 class Main {
-
     private Timer timer;
     private PhysicsEngine engine;
     private GUI gui;
 
-    public static void main(String[] args) {
-        initialize();
+    public Main() {
+        timer = new Timer();
+        engine = new PhysicsEngine();
+        gui = new GUI();
+    }
 
+    public void run() {
+        // Your main execution logic
     }
 
     private void draw() {
@@ -19,10 +23,8 @@ class Main {
         //TODO
     }
 
-    private void initialize() {
-        timer = new Timer();
-        engine = new PhysicsEngine();
-        gui = new GUI();
+    public static void main(String[] args) {
+        Main mainInstance = new Main();
+        mainInstance.run(); // Run the instance method
     }
-
 }
