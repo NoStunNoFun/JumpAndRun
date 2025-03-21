@@ -12,6 +12,7 @@ public class GUI {
 
     public ArrayList<Character> giveInputs() {
         //TODO
+        return new ArrayList<>();
     }
 
     public void draw() {
