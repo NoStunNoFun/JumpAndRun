@@ -34,6 +34,7 @@ class Main {
             return false;
         }
         engine.calculate(inputs);
+        return true;
     }
 
     public static void main(String[] args) {
