@@ -2,6 +2,6 @@ import java.util.ArrayList;
 
 public interface Map {
 
-    public static ArrayList<Coordinates> obstacles = new ArrayList<Coordinates>();
+    public Coordinates[] obstacles = new Coordinates[0];
 
 }

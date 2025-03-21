@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import javax.swing.*;
 
 public class GUI {
-    
-    private ? graphicalMap;
-    private ? graphicalPlayer;
+
+    private ImageIcon graphicalMap;
+    private ImageIcon graphicalPlayer;
 
     public GUI() {
         //TODO
