@@ -6,13 +6,13 @@ class Main {
     private GUI gui;
 
     public Main() {
-        timer = new Timer();
+        timer = new Timer(60);
         engine = new PhysicsEngine();
         gui = new GUI();
     }
 
     public void run() {
-        // Your main execution logic
+        //TODO
     }
 
     private void draw() {
@@ -25,6 +25,6 @@ class Main {
 
     public static void main(String[] args) {
         Main mainInstance = new Main();
-        mainInstance.run(); // Run the instance method
+        mainInstance.run();
     }
 }

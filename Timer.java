@@ -1,16 +1,20 @@
 public class Timer {
-    private ? currentTime;
-    private ? timePassed;
 
-    public Timer() {
-        //TODO
+    private long currentTime;
+    private long lastTime;
+    private long timePerTick;
+    
+    public Timer(int ticksPerSecond) {
+        this.timePerTick = 1_000_000_000L / ticksPerSecond; // nanoseconds per tick
+        this.lastTime = System.nanoTime();
     }
 
     public boolean tickReady() {
-        //TODO
+        currentTime = System.nanoTime();
+        return (currentTime - lastTime) >= timePerTick;
     }
 
     public void updateTime() {
-        //TODO
+        lastTime = System.nanoTime();
     }
 }
