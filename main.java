@@ -12,15 +12,28 @@ class Main {
     }
 
     public void run() {
-        //TODO
+        boolean isRunning = true;
+        while (isRunning) {
+            while (!timer.tickReady()) {
+                timer.updateTime();
+            }
+            if (!forwardInputs()) {
+                isRunning = false;
+            }
+            draw();
+        }
     }
 
     private void draw() {
-        //TODO
+        gui.draw();
     }
 
-    private void forwardInputs(ArrayList<Character> d) {
-        //TODO
+    private boolean forwardInputs() {
+        ArrayList<Character> inputs = gui.giveInputs();
+        if (inputs.contains(62)) {
+            return false;
+        }
+        engine.calculate(inputs);
     }
 
     public static void main(String[] args) {

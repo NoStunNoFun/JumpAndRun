@@ -2,8 +2,8 @@ public class Coordinates {
     private int X;
     private int Y;
 
-    public Coordinates() {
-        X = 0;
-        Y = 0;
+    public Coordinates(int x, int y) {
+        X = x;
+        Y = y;
     }
 }

@@ -9,7 +9,7 @@ public class Player {
 
     public Player () {
         boolean facingRight = true;
-        Coordinates position = new Coordinates();
+        Coordinates position = new Coordinates(0,0);
         int Xspeed = 0;
         int Yspeed = 0;
         boolean isJumping = false;
