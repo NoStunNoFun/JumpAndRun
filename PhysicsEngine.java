@@ -6,7 +6,7 @@ public class PhysicsEngine {
 
     public PhysicsEngine() {
         player = new Player();
-        map = new Map();
+        map = new testMap();
     }
 
     public void Calciulate (ArrayList<Character> arraylist) {

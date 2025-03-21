@@ -1,5 +1,4 @@
 public class Timer {
-    
     private ? currentTime;
     private ? timePassed;
 
